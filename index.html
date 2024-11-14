@@ -41,7 +41,7 @@
 
     <script>
         // Replace 'your_droplet_ip' with your Digital Ocean Droplet IP and port
-        const socket = new WebSocket('ws://152.42.238.68:8080'); 
+        const socket = new WebSocket('wss://152.42.238.68:8080'); 
 
         socket.onmessage = (event) => {
             const data = JSON.parse(event.data);
